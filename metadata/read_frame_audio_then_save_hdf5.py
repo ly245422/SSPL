@@ -19,7 +19,7 @@ from models.torchvggish.torchvggish import vggish_input
 # -----------------------------------------------
 # raw training data paths and hyper-parameters
 # -----------------------------------------------
-root_data = "/data/ly/SSPL/metadata" # /data/metadata
+root_data = "/SSPL/metadata" # /data/metadata
 
 mode = "test" # train/test
 if mode == "train":
