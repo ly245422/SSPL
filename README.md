@@ -8,15 +8,15 @@ Python  3.8.0 | torch  1.10.0+cu113 | torchaudio  0.10.0+cu113 | torchvision  0.
 
 ### Setting
 [sspl_w_pcm]
-epoch: 350
-devices: RTX 3070 * 1
-batch_size_per_gpu: 64
-img_size: 224
-[sspl_wo_pcm]
-epoch: 40
-devices: RTX 3070 * 1
-batch_size_per_gpu: 128
-img_size: 224
+epoch: 350<br>
+devices: RTX 3070 * 1<br>
+batch_size_per_gpu: 64<br>
+img_size: 224<br>
+[sspl_wo_pcm]<br>
+epoch: 40<br>
+devices: RTX 3070 * 1<br>
+batch_size_per_gpu: 128<br>
+img_size: 224<br>
 
 ### Download & pre-process videos
 Please refer to the SSPL/metadata/Pre-data.md file.
