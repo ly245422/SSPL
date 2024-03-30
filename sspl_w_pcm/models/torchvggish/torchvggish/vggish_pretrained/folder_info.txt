@@ -1,0 +1,4 @@
+Save pretrained VGGish in this folder for both training and evaluation:
+
+vggish-10086976.pth
+--https://github.com/harritaylor/torchvggish/releases/download/v0.1/vggish-10086976.pth
