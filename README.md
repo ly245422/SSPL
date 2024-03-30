@@ -4,8 +4,9 @@ We use this model(sspl_w_pcm) in [2024 ICME Grand Challenge] Multi-Modal Video R
 ## How to reproduce
 ### Requirements
 We have tested the code on the following environment:<br>
+```
 Python  3.8.0 | torch  1.10.0+cu113 | torchaudio  0.10.0+cu113 | torchvision  0.11.1+cu113 | CUDA  11.4
-
+```
 ### Setting
 ```
 [sspl_w_pcm]:
