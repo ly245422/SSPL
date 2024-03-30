@@ -3,30 +3,31 @@
 ### Download the official annotations
 Organize the SSL_ssl_format file in the SSPL/metadata folder in the following format.
 [SSL_ssl_format.zip](https://drive.google.com/file/d/1nE_17zGhEx4aIKv_8WVltyUWydEO2-d6/view?usp=drive_link)<br>
-metadata<br>
-|<br>
-└───SSL_ssl_format<br>
-    |<br>
-    └───annotation<br>
-    |   |<br>
-    |   └───frame<br>
-    |   |   |   ADCCAWWD.csv<br>
-    |   |   |   ...<br>
-    |   |   |   ZXVHGAQL.csv<br>
-    |   |   |<br>
-    |   └───group<br>
-    |   |   |   ADCCAWWD.csv<br>
-    |   |   |   ...<br>
-    |   |   |   ZXVHGAQL.csv<br>
-    |   |   |   <br>
-    |   └───train_ssl.txt<br>
-    │   |<br>
-    |   └───test_ssl.txt<br>
-    │<br>
-    └───generating_ssl_dataset.py<br>
-    │<br>
-    └───read_frame_audio_then_save_hdf5.py<br>
-
+'''
+metadata
+|
+└───SSL_ssl_format
+    |
+    └───annotation
+    |   |
+    |   └───frame
+    |   |   |   ADCCAWWD.csv
+    |   |   |   ...
+    |   |   |   ZXVHGAQL.csv
+    |   |   |
+    |   └───group
+    |   |   |   ADCCAWWD.csv
+    |   |   |   ...
+    |   |   |   ZXVHGAQL.csv
+    |   |   |   
+    |   └───train_ssl.txt
+    │   |
+    |   └───test_ssl.txt
+    │
+    └───generating_ssl_dataset.py
+    │
+    └───read_frame_audio_then_save_hdf5.py
+'''
 ### Generate the ssl
 Run the SSPL/metadata/generating_ssl_dataset.py file to generate the ssl<br>
 Initialize the dataset root (metadata), annotation root, frame root, video root, and the type of produced dataset (train/test) in the generating_ssl_dataset.<br>
