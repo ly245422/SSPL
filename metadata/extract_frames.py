@@ -1,7 +1,7 @@
 ## Extract frames using ffmpeg and parallel
 import subprocess
 
-dir_video_new_save_root = r"/data/wenjj/ChaoticWorld/videos_320_180"
+dir_video_new_save_root = r"/ChaoticWorld/videos_320_180" # Specify your own original video path
 
 
 print('Extracting videos')
