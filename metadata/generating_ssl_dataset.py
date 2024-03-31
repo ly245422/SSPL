@@ -1,5 +1,5 @@
 ## Specify save file path
-dir_dataset_root = 'Path to metadata' ## e.g. SSPL/metadata/
+dir_dataset_root = 'Path to metadata' # e.g., /home/xxx/SSPL/metadata/
 dir_annotation_root = dir_dataset_root  + '/SSL_ssl_format/annotation/group'
 dir_frame_root = '/ChaoticWorld/frames_320_180' ## Specify your frame root
 dir_video_root = '/ChaoticWorld/videos_320_180' ## Specify your video root
