@@ -6,7 +6,7 @@ Settings.
 import argparse
 
 
-data_path = "Path to metadata"    # e.g., /home/xxx/Datasets/
+data_path = "Path to metadata"    ## e.g., /home/xxx/SSPL/metadata/
 weights_frame = "./sspl_w_pcm_ChaoticWorld/frame_best.pth"
 weights_sound = "./sspl_w_pcm_ChaoticWorld/sound_best.pth"
 weights_pcm = "./sspl_w_pcm_ChaoticWorld/pcm_best.pth"
@@ -91,7 +91,7 @@ class ArgParser(object):
         # -----------------------------
         # Distributed Data Parallel
         # -----------------------------
-        parser.add_argument('--gpu_ids', default='2', type=str)
+        parser.add_argument('--gpu_ids', default='0', type=str)
         parser.add_argument('--num_gpus', default=1, type=int,
                             help='number of gpus to use')
         parser.add_argument('--batch_size_per_gpu', default=128, type=int,
@@ -105,7 +105,7 @@ class ArgParser(object):
 
         parser.add_argument('--optimizer', default='adamw', type=str,
                             help='optimizer')
-        parser.add_argument('--num_epoch', default=20, type=int,
+        parser.add_argument('--num_epoch', default=350, type=int,
                             help='epochs for training')
         parser.add_argument('--lr_frame', default=2e-5, type=float,
                             help='learning rate for pcm network')
