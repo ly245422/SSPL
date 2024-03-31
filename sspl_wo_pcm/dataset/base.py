@@ -35,7 +35,7 @@ class BaseDataset(torchdata.Dataset):
         self._init_atransform()
 
         if self.mode == 'train':
-            if self.testset == 'ChaoticWorld':
+            if self.trainset == 'ChaoticWorld':
                 data_path = args.data_path + 'ChaoticWorld/all_unlabeled/ChaoticWorld_train.csv'
             self.data_ids = pd.read_csv(data_path, header=None, sep=',')
             self.num_data = self.data_ids.shape[0]
