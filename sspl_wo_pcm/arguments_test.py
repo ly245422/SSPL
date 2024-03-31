@@ -6,7 +6,7 @@ Settings.
 import argparse
 
 
-data_path = "Path to metadata"    # e.g., /home/xxx/Datasets/
+data_path = "Path to metadata"    # e.g., /home/xxx/SSPL/metadata/
 weights_frame = "./sspl_wo_pcm_ChaoticWorld/frame_best.pth"
 weights_sound = "./sspl_wo_pcm_ChaoticWorld/sound_best.pth"
 weights_ssl_head = "./sspl_wo_pcm_ChaoticWorld/ssl_head_best.pth"
@@ -44,8 +44,8 @@ class ArgParser(object):
                             help='test data set name: {flickr, vggss, ChaoticWorld}')
         parser.add_argument('--data_path', default=data_path, type=str,
                             help='root directory path of data')
-        parser.add_argument('--num_train', default=10000, type=int,
-                            help='number of training samples: {10000, 144000}')
+        parser.add_argument('--num_train', default=1595, type=int,
+                            help='number of training samples: {10000, 144000, 1595}')
         parser.add_argument('--imgSize', default=224, type=int,
                             help='height and width of resized image')
         parser.add_argument('--audSec', default=3, type=int,
@@ -84,7 +84,7 @@ class ArgParser(object):
         # -----------------------------
         # Distributed Data Parallel
         # -----------------------------
-        parser.add_argument('--gpu_ids', default='2', type=str)
+        parser.add_argument('--gpu_ids', default='0', type=str)
         parser.add_argument('--num_gpus', default=1, type=int,
                             help='number of gpus to use')
         parser.add_argument('--batch_size_per_gpu', default=128, type=int,
