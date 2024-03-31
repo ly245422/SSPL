@@ -7,10 +7,10 @@ import argparse
 
 
 data_path = "Path to metadata"    # e.g., /home/xxx/Datasets/
-weights_frame = "/SSPL/sspl_w_pcm/sspl_w_pcm_ChaoticWorld/frame_best.pth"
-weights_sound = "/SSPL/sspl_w_pcm/sspl_w_pcm_ChaoticWorld/sound_best.pth"
-weights_pcm = "/SSPL/sspl_w_pcm/sspl_w_pcm_ChaoticWorld/pcm_best.pth"
-weights_ssl_head = "/SSPL/sspl_w_pcm/sspl_w_pcm_ChaoticWorld/ssl_head_best.pth"
+weights_frame = "./sspl_w_pcm_ChaoticWorld/frame_best.pth"
+weights_sound = "./sspl_w_pcm_ChaoticWorld/sound_best.pth"
+weights_pcm = "./sspl_w_pcm_ChaoticWorld/pcm_best.pth"
+weights_ssl_head = "./sspl_w_pcm_ChaoticWorld/ssl_head_best.pth"
 weights_vggish = "./models/torchvggish/torchvggish/vggish_pretrained/vggish-10086976.pth"
 
 
