@@ -30,7 +30,7 @@ to select hyper-parameters and avoid overfitting.
 
 ### Test
 After training, ```frame_best.pth```, ```sound_best.pth```, ```ssl_head_best.pth``` (and ```pcm_best.pth``` for SSPL (w/ PCM)) 
-can be obtained, and you need to place them in ```models/pretrain/``` before testing. <br>To test SSPL on SoundNet-Flickr 
+can be obtained, and you need to place them in ```models/pretrain/``` before testing. <br>To test SSPL on Chaotic World 
 with default setting, simply run:
 ```
 python test.py
