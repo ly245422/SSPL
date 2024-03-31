@@ -1,6 +1,7 @@
 # Data Preparation
 ## Chaotic World dataset
 ### Frame the video
+You need to download the original video yourself.<br>
 Specify your own dir_video_org and dir_video_new_save_root in the SSPL/metadata/extract_frames.py.<br>
 To generate all frames 320x180, simply run:
 ```
