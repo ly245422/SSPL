@@ -23,19 +23,19 @@ in ```models/torchvggish/torchvggish/vggish_pretrained/```. <br>To train SSPL on
 ```
 python main.py
 ```
-Remember to specify your own MASTER_ADDR and MASTER_PORT in main.py
+Remember to specify your own MASTER_ADDR and MASTER_PORT in main.py and path to metadata in arguments_train.py
 
 **Note:** We found that learning rates have vital influence on SSPL's performance. So we suggest that using the early stopping strategy 
 to select hyper-parameters and avoid overfitting.
 
 ### Test
 After training, ```frame_best.pth```, ```sound_best.pth```, ```ssl_head_best.pth``` (and ```pcm_best.pth``` for SSPL (w/ PCM)) 
-can be obtained, and you need to place them in ```models/pretrain/``` before testing. <br>To test SSPL on Chaotic World 
+can be obtained. <br>To test SSPL on Chaotic World 
 with default setting, simply run:
 ```
 python test.py
 ```
-Remember to specify your own MASTER_ADDR and MASTER_PORT in test.py
+Remember to specify your own MASTER_ADDR and MASTER_PORT in test.py and path to metadata in arguments_test.py
 
 ### Weight
 You can download our checkpoint and best weights.<br>
