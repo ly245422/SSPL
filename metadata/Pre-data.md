@@ -39,21 +39,20 @@ metadata
 └───SSL_ssl_format
     |
     └───annotation
-    |   |
-    |   └───frame
-    |   |   |   ADCCAWWD.csv
-    |   |   |   ...
-    |   |   |   ZXVHGAQL.csv
-    |   |   |
-    |   └───group
-    |   |   |   ADCCAWWD.csv
-    |   |   |   ...
-    |   |   |   ZXVHGAQL.csv
-    |   |   |   
-    |   └───train_ssl.txt
-    │   |
-    |   └───test_ssl.txt
-    │
+        |
+        └───frame
+        |   |   ADCCAWWD.csv
+        |   |   ...
+        |   |   ZXVHGAQL.csv
+        |   |
+        └───group
+        |   |   ADCCAWWD.csv
+        |   |   ...
+        |   |   ZXVHGAQL.csv
+        |   |   
+        └───train_ssl.txt
+        |
+        └───test_ssl.txt
 ```
 
 ### Generate the ssl
