@@ -30,9 +30,12 @@ metadata
 ```
 
 ### Generate the ssl
-Run the SSPL/metadata/generating_ssl_dataset.py file to generate the ssl<br>
-Initialize the dataset root (metadata), annotation root, frame root, video root, and the type of produced dataset (train/test) in the generating_ssl_dataset.<br>
-Run the generating_ssl_dataset.py file to generate the ssl folder structure as follows,
+Initialize the dataset root (metadata), annotation root, frame root, video root, and the type of produced dataset (train/test) in the SSPL/metadata/generating_ssl_dataset.py.<br>
+To generate the ssl folder, simply run:
+```
+python generating_ssl_dataset.py
+```
+the ssl folder structure as follows,
 ```
 ssl
 |
@@ -59,9 +62,12 @@ ssl
 ```
 
 ### Generate the h5 file
-Run the SSPL/metadata/read_frame_audio_then_save_hdf5.py file to generate the h5 file.<br>
-Move the read_frame_audio_then_save_hdf5.py file to the sspl_w_pcm folder.<br>
-Initialize root_data = "/data/SSPL/metadata" and mode (train/test)<br>
+Move the SSPL/metadata/read_frame_audio_then_save_hdf5.py file to the SSPL/sspl_w_pcm folder.<br>
+Initialize root_data and mode (train/test)<br>
+To generate the h5 files, simply run:
+```
+python read_frame_audio_then_save_hdf5.py
+```
 The final format of the dataset is as follows
 ```
 metadata
