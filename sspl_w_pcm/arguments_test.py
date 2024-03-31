@@ -94,7 +94,7 @@ class ArgParser(object):
         parser.add_argument('--gpu_ids', default='0', type=str)
         parser.add_argument('--num_gpus', default=1, type=int,
                             help='number of gpus to use')
-        parser.add_argument('--batch_size_per_gpu', default=128, type=int,
+        parser.add_argument('--batch_size_per_gpu', default=64, type=int,
                             help='batch size for each gpu')
         parser.add_argument('--workers', default=8, type=int,
                             help='number of data loading workers')
@@ -105,7 +105,7 @@ class ArgParser(object):
 
         parser.add_argument('--optimizer', default='adamw', type=str,
                             help='optimizer')
-        parser.add_argument('--num_epoch', default=350, type=int,
+        parser.add_argument('--num_epoch', default=20, type=int,
                             help='epochs for training')
         parser.add_argument('--lr_frame', default=2e-5, type=float,
                             help='learning rate for pcm network')
