@@ -1,7 +1,34 @@
 # Data Preparation
 ## Chaotic World dataset
 ### Frame the video
-Specify <br>
+Specify your own dir_video_org and dir_video_new_save_root in the SSPL/metadata/extract_frames.py.<br>
+To generate all frames 320x180, simply run:
+```
+python extract_frames.py
+```
+the frames_320_180 folder structure as follows,
+```
+frames_320_180
+|
+└───ADCCAWWD
+|   |   ADCCAWWD_000001.png
+|   |   ...
+|   |   ADCCAWWD_005103.png
+|   |   
+└───AGRUUMUL
+|   |   AGRUUMUL_000001.png
+|   |   ...
+|   |   AGRUUMUL_001220.png
+|   |   
+|   |   ...
+|   |   ...
+|   |   ...
+|   |   
+└───AGRUUMUL
+|   |   ZYLIXFXD_000001.png
+|   |   ...
+|   |   ZYLIXFXD_002499.png
+```
 ### Download the official annotations
 Organize the SSL_ssl_format file in the SSPL/metadata folder in the following format.
 [SSL_ssl_format.zip](https://drive.google.com/file/d/1nE_17zGhEx4aIKv_8WVltyUWydEO2-d6/view?usp=drive_link)
