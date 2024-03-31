@@ -60,7 +60,7 @@ metadata
 ```
 
 ### Generate the ssl
-Specify the dataset root (metadata), annotation root, frame root, video root, and the type of produced dataset (train/test) in the SSPL/metadata/generating_ssl_dataset.py.<br>
+Specify the dataset root (metadata), frame root, video root, and the type of produced dataset (train/test) in the SSPL/metadata/generating_ssl_dataset.py.<br>
 To generate the ssl folder, simply run:
 ```
 python generating_ssl_dataset.py
