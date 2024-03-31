@@ -1,5 +1,7 @@
 # Data Preparation
 ## Chaotic World dataset
+### Frame the video
+Specify <br>
 ### Download the official annotations
 Organize the SSL_ssl_format file in the SSPL/metadata folder in the following format.
 [SSL_ssl_format.zip](https://drive.google.com/file/d/1nE_17zGhEx4aIKv_8WVltyUWydEO2-d6/view?usp=drive_link)
@@ -30,7 +32,7 @@ metadata
 ```
 
 ### Generate the ssl
-Initialize the dataset root (metadata), annotation root, frame root, video root, and the type of produced dataset (train/test) in the SSPL/metadata/generating_ssl_dataset.py.<br>
+Specify the dataset root (metadata), annotation root, frame root, video root, and the type of produced dataset (train/test) in the SSPL/metadata/generating_ssl_dataset.py.<br>
 To generate the ssl folder, simply run:
 ```
 python generating_ssl_dataset.py
@@ -63,7 +65,7 @@ ssl
 
 ### Generate the h5 file
 Move the SSPL/metadata/read_frame_audio_then_save_hdf5.py file to the SSPL/sspl_w_pcm folder.<br>
-Initialize root_data and mode (train/test)<br>
+Specify root_data and mode (train/test)<br>
 To generate the h5 files, simply run:
 ```
 python read_frame_audio_then_save_hdf5.py
