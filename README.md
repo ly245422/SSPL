@@ -1,5 +1,5 @@
 # Self-Supervised Predictive Learning (SSPL)
-We use this model in Track #4 Sound Source Localization of [2024 ICME Grand Challenge] Multi-Modal Video Reasoning and Analyzing Competition (MMVRAC). Our results are cIoU 0.4309 AUC 0.4288(sspl_w_pcm) and cIoU 0.4112 AUC 0.4260(sspl_wo_pcm). 
+We use this model in Track #4 Sound Source Localization of [2024 ICME Grand Challenge] Multi-Modal Video Reasoning and Analyzing Competition (MMVRAC). Our results are cIoU 0.4770 AUC 0.4414(sspl_w_pcm) and cIoU 0.4112 AUC 0.4260(sspl_wo_pcm). 
 
 ## How to reproduce
 ### Requirements
@@ -39,7 +39,7 @@ Remember to specify your own MASTER_ADDR and MASTER_PORT in test.py and path to 
 
 ### Weight
 You can download our checkpoint and best weights.<br>
-[sspl_w_pcm_ChaoticWorld.zip](https://drive.google.com/file/d/1Gj2TDs5pQqbIAN0dMgvRURLJqd4he1o_/view?usp=drive_link)<br>
+[sspl_w_pcm_ChaoticWorld.zip](https://drive.google.com/file/d/1XeTe41_5e-_nTR7vSLDr9a51ZsfBFDKP/view?usp=drive_link)<br>
 [sspl_wo_pcm_ChaoticWorld.zip](https://drive.google.com/file/d/1_-V1vhqo92fAvmIyGyizkDfWggutwRyy/view?usp=drive_link) 
 
 
