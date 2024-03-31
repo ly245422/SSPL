@@ -54,9 +54,6 @@ metadata
     │   |
     |   └───test_ssl.txt
     │
-    └───generating_ssl_dataset.py
-    │
-    └───read_frame_audio_then_save_hdf5.py
 ```
 
 ### Generate the ssl
