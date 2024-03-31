@@ -19,8 +19,7 @@ from models.torchvggish.torchvggish import vggish_input
 # -----------------------------------------------
 # raw training data paths and hyper-parameters
 # -----------------------------------------------
-root_data = "Path to metadata" ## e.g., /SSPL/metadata
-
+root_data = "Path to metadata" ## e.g., /home/xxx/SSPL/metadata/
 mode = "test" ## train/test
 if mode == "train":
     path_video_all = root_data + '/ssl/train_list.csv'
