@@ -29,6 +29,7 @@ frames_320_180
 |   |   ZYLIXFXD_000001.png
 |   |   ...
 |   |   ZYLIXFXD_002499.png
+|   |
 ```
 ### Download the official annotations
 Organize the SSL_ssl_format file in the SSPL/metadata folder in the following format.
@@ -37,22 +38,23 @@ Organize the SSL_ssl_format file in the SSPL/metadata folder in the following fo
 metadata
 |
 └───SSL_ssl_format
-    |
-    └───annotation
-        |
-        └───frame
-        |   |   ADCCAWWD.csv
-        |   |   ...
-        |   |   ZXVHGAQL.csv
-        |   |
-        └───group
-        |   |   ADCCAWWD.csv
-        |   |   ...
-        |   |   ZXVHGAQL.csv
-        |   |   
-        └───train_ssl.txt
-        |
-        └───test_ssl.txt
+|   |
+|   └───annotation
+|   |   |
+|   |   └───frame
+|   |   |   |   ADCCAWWD.csv
+|   |   |   |   ...
+|   |   |   |   ZXVHGAQL.csv
+|   |   |   |
+|   |   └───group
+|   |   |   |   ADCCAWWD.csv
+|   |   |   |   ...
+|   |   |   |   ZXVHGAQL.csv
+|   |   |   |   
+|   |   └───train_ssl.txt
+|   |   |
+|   |   └───test_ssl.txt
+|   | 
 ```
 
 ### Generate the ssl
@@ -99,24 +101,25 @@ The final format of the dataset is as follows
 metadata
 |
 └───ChaoticWorld
-    │
-    └───all_unlabeled
-    |   |   h5py_test_frames.h5
-    |   |   h5py_test_audios.h5
-    |   |   h5py_test_spects.h5
-    |   |
-    |
-    └───labeled
-        |
-        └───Annotations
-        |   |   ChaoticWorld_test.json
-        |   |
-        └───Data
-        |   |   h5py_test_frames.h5
-        |   |   h5py_test_audios.h5
-        |   |   h5py_test_spects.h5
-        |   |   ChaoticWorld_test.csv
-        └───ChaoticWorld_test.csv
+|   │
+|   └───all_unlabeled
+|   |   |   h5py_test_frames.h5
+|   |   |   h5py_test_audios.h5
+|   |   |   h5py_test_spects.h5
+|   |   |
+|   |
+|   └───labeled
+|   |   |
+|   |   └───Annotations
+|   |   |   |   ChaoticWorld_test.json
+|   |   |   |
+|   |   └───Data
+|   |   |   |   h5py_test_frames.h5
+|   |   |   |   h5py_test_audios.h5
+|   |   |   |   h5py_test_spects.h5
+|   |   |   |   ChaoticWorld_test.csv
+|   |   └───ChaoticWorld_test.csv
+|   | 
 ```
 You can also use the preprocessed dataset and placed it in the SSPL/metadata.<br>
 [ChaoticWorld.zip](https://drive.google.com/file/d/12cDq-_KjnAsCJZXJF5DZb72zVY4hi0nW/view?usp=drive_link)
