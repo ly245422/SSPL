@@ -1,5 +1,5 @@
 # Self-Supervised Predictive Learning (SSPL)
-We use this model(sspl_w_pcm) in [2024 ICME Grand Challenge] Multi-Modal Video Reasoning and Analyzing Competition(MMVRAC) Track #4: Sound Source Localization obtains the result cIoU 0.4309 AUC 0.4288(sspl_w_pcm) cIoU 0.4112 AUC 0.4260(sspl_wo_pcm) 
+We use this model in Track #4 Sound Source Localization of [2024 ICME Grand Challenge] Multi-Modal Video Reasoning and Analyzing Competition (MMVRAC). Our results are cIoU 0.4309 AUC 0.4288(sspl_w_pcm) and cIoU 0.4112 AUC 0.4260(sspl_wo_pcm). 
 
 ## How to reproduce
 ### Requirements
@@ -7,18 +7,10 @@ We have tested the code on the following environment:<br>
 ```
 Python  3.8.0 | torch  1.10.0+cu113 | torchaudio  0.10.0+cu113 | torchvision  0.11.1+cu113 | CUDA  11.4
 ```
-### Setting
+### Parameter setting
 ```
-[sspl_w_pcm]:
-epoch: 350
-devices: RTX 3070 * 1
-batch_size_per_gpu: 64
-img_size: 224
-[sspl_wo_pcm]:
-epoch: 40
-devices: RTX 3070 * 1
-batch_size_per_gpu: 128
-img_size: 224
+[sspl_w_pcm]: epoch: 350 | devices: RTX 3070 * 1 | batch_size_per_gpu: 64 | img_size: 224
+[sspl_wo_pcm]: epoch: 40 | devices: RTX 3070 * 1 | batch_size_per_gpu: 128 | img_size: 224
 ```
 ### Download & pre-process videos
 Please refer to the SSPL/metadata/Pre-data.md file.
