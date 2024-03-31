@@ -21,7 +21,6 @@ if mode == "train":
     dir_ssl_wavs = os.path.join(dir_dataset_root, 'ssl/ssl_train_wavs')
     dir_csv = os.path.join(dir_dataset_root, 'ssl/train_list.csv')
 elif mode == "test":
-    ## Create directories
     dir_ssl_frames = os.path.join(dir_dataset_root, 'ssl/ssl_test_frames_320x180')
     dir_ssl_wavs = os.path.join(dir_dataset_root, 'ssl/ssl_test_wavs')
     dir_csv = os.path.join(dir_dataset_root, 'ssl/test_list.csv')
