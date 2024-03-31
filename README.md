@@ -1,5 +1,5 @@
 # Self-Supervised Predictive Learning (SSPL)
-We use this model in Track #4 Sound Source Localization of [2024 ICME Grand Challenge] Multi-Modal Video Reasoning and Analyzing Competition (MMVRAC). Our results are cIoU 47.70 AUC 44.14(sspl_w_pcm) and cIoU 41.12 AUC 42.60(sspl_wo_pcm). 
+We use this model in Track #4 Sound Source Localization of [2024 ICME Grand Challenge] Multi-Modal Video Reasoning and Analyzing Competition (MMVRAC). Our results are cIoU 47.70 AUC 44.14 (sspl_w_pcm) and cIoU 41.12 AUC 42.60 (sspl_wo_pcm). 
 
 ## How to reproduce
 ### Requirements
