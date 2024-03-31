@@ -35,9 +35,12 @@ class BaseDataset(torchdata.Dataset):
         self._init_atransform()
 
         if self.mode == 'train':
-            self.num_data = args.num_train
+            if self.trainset == 'ChaoticWorld':
+                data_path = args.data_path + 'ChaoticWorld/all_unlabeled/ChaoticWorld_train.csv'
+            self.data_ids = pd.read_csv(data_path, header=None, sep=',')
+            self.num_data = self.data_ids.shape[0]
             print('number of training samples: ', self.num_data)
-
+            
         elif self.mode == 'test':
             if self.testset == 'flickr':
                 data_path = args.data_path + 'SoundNet_Flickr/flickr_test249_in5k.csv'
