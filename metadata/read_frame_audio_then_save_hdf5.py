@@ -19,9 +19,9 @@ from models.torchvggish.torchvggish import vggish_input
 # -----------------------------------------------
 # raw training data paths and hyper-parameters
 # -----------------------------------------------
-root_data = "/SSPL/metadata" # /data/metadata
+root_data = "Path to metadata" ## e.g., /SSPL/metadata
 
-mode = "test" # train/test
+mode = "test" ## train/test
 if mode == "train":
     path_video_all = root_data + '/ssl/train_list.csv'
     csv_path = root_data + '/ChaoticWorld/all_unlabeled'
@@ -54,12 +54,12 @@ if os.path.isfile(csv_path):
 
 for i in range(sample_size):
 
-    path = video_train_frames_all_paths.iat[i, 0]   # path: e.g., 'ADCCAWWD_004157'
+    path = video_train_frames_all_paths.iat[i, 0]   ## path: e.g., 'ADCCAWWD_004157'
     print(f"Processing {path}")
     
     # frame (jpg)
     if mode == "train":
-        frame_path = root_data + '/ssl/ssl_train_frames_320x180/' + path + '.png' # e.g., /SSPL/metadata/ssl/ssl_test_frames_320x180/ADCCAWWD_004157.png
+        frame_path = root_data + '/ssl/ssl_train_frames_320x180/' + path + '.png' ## e.g., /SSPL/metadata/ssl/ssl_test_frames_320x180/ADCCAWWD_004157.png
     elif mode == "test":
         frame_path = root_data + '/ssl/ssl_test_frames_320x180/' + path + '.png'
     if not os.path.exists(frame_path):
@@ -68,7 +68,7 @@ for i in range(sample_size):
 
     # audio (mp3)
     if mode == "train":
-        audio_path = root_data + '/ssl/ssl_train_wavs/' + path + '.wav' # /SSPL/metadata/ssl/ssl_test_wavs/ADCCAWWD_004157.wav
+        audio_path = root_data + '/ssl/ssl_train_wavs/' + path + '.wav' ## e.g., /SSPL/metadata/ssl/ssl_test_wavs/ADCCAWWD_004157.wav
     elif mode == "test":
         audio_path = root_data + '/ssl/ssl_test_wavs/' + path + '.wav'
     if not os.path.exists(audio_path):   # skip empty folder
@@ -114,16 +114,17 @@ for i in range(sample_size):
     if cnt_saved_data == sample_size:
         print('All {} sample data have been extracted.'.format(cnt_saved_data))
         break
-
+# -----------------------------------------------
 # Remove the trailing zero rows
+# -----------------------------------------------
 last_nonzero_index = np.where(np.any(sample_frames != 0, axis=(1, 2, 3)))[0][-1]
 sample_frames = sample_frames[:last_nonzero_index + 1]
 sample_audios = sample_audios[:last_nonzero_index + 1]
 sample_spects = sample_spects[:last_nonzero_index + 1]
+
 # -----------------------------------------------
 # save paths and data
 # -----------------------------------------------
-# save data into hdf5
 if mode == "train":
     h5py_path_frames = root_data + '/ChaoticWorld/all_unlabeled/h5py_train_frames.h5'
     h5py_path_audios = root_data + '/ChaoticWorld/all_unlabeled/h5py_train_audios.h5'
